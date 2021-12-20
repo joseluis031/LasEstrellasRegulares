@@ -1,5 +1,4 @@
 import turtle #es como un puntero que se va desplazando y dibujando a su vez
-turtle.begin_fill()
 
 def estrella():
     turtle.color('grey')
@@ -15,3 +14,6 @@ def estrella():
 
 estrella()
 turtle.done() #para que no se cierre la pantalla turtle
+
+if __name__ == '__main__':
+    start = int(input("¿Cuántas puntas quieres que tenga tu estrella?: "))
