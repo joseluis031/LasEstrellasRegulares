@@ -13,7 +13,8 @@ def estrella(start):
             turtle.end_fill()
             if abs(turtle.pos()) < 1:
                 break
-
+    elif start % 2 == 0:
+        pass
     turtle.end_fill()
     turtle.done()
     
