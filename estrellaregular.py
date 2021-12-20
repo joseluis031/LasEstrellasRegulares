@@ -12,10 +12,19 @@ def estrella(start):
             turtle.right((360/start) + 120)
         else:
             break
+            
+        if start < 5:
+            print("¡Recuerda que las estrellas mínimo tienen 5 puntass!!")
+            turtle.write("No puedo dibujarte una estrella, lo siento")
+            break
+       
+             
         if abs(turtle.pos()) < 1: #para que el puntero se pare una vez dibujado toda la estrella
             break
     turtle.end_fill()        
     turtle.done() #para que no se cierre la pantalla turtle
+
+
 if __name__ == '__main__':
     start= int(input("¿Cuántas puntas quieres que tenga tu estrella?: "))
     estrella(start)
