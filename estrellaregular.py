@@ -18,7 +18,7 @@ def estrella(start):
             
         if start < 5:
             print("¡Recuerda que las estrellas mínimo tienen 5 puntass!!")
-            turtle.write("No puedo dibujarte una estrella, lo siento")
+            turtle.write("No puedo dibujarte una estrella con esas puntas,lo siento")
             break
         if abs(turtle.pos()) < 1: #para que el puntero se pare una vez dibujado toda la estrella
             break
