@@ -24,7 +24,6 @@ def estrella(start):
     turtle.end_fill()        
     turtle.done() #para que no se cierre la pantalla turtle
 
-
 if __name__ == '__main__':
     start= int(input("¿Cuántas puntas quieres que tenga tu estrella?: "))
     estrella(start)
