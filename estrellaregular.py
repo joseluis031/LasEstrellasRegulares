@@ -3,12 +3,12 @@ def estrella(start):
     turtle.color('grey')
     turtle.fillcolor("yellow")
     turtle.begin_fill()
-
+    turtle.title('Tu estrella')
     while True:
         turtle.forward(200)
-        if start % 4 == 0:
-            turtle.right(180 - (360/start))
-        if start % 3 == 0:
+        if start % 4 == 0:    #al dibujar estrellas, la suma de sus puntas siempre van a ser multiplo de 3 o de 4
+            turtle.left(180 - (360/start))
+        elif start % 3 == 0:
             turtle.right((360/start) + 120)
         else:
             break
